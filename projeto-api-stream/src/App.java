@@ -7,7 +7,6 @@ public class App {
         //Vamos explorar API Stream do java!
 
         //Laço de repetição
-
         List<Integer> listaIdade = Arrays.asList(1, 12, 17, 32, 39); 
         listaIdade.forEach(idade -> System.out.println(idade));
 
