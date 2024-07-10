@@ -32,13 +32,17 @@ public class TiposVariaveis {
         boolean estaEstudando = true;
 
 
+        System.out.println("Idade: "+idade);
+        System.out.println("Está estudando: "+estaEstudando);
+
+
         //(cast) ou popular mente chamado de coerção, é um conceito aplicado em variaveis com tipo de capacidade
         //para receber um valor maior e quero mesmo assim atribuir esse valor a uma variavel com seu tipo menor.
         //Exemplo
         int idadeComTipoDeDadoMaior = 32; //variavel inteira com capacidade de armazenar um dado muito maior que um short
         short idadeComTipoDeDadoMenor = (short) idadeComTipoDeDadoMaior; //cast aplicado
 
-
+        System.out.println("Cast: "+idadeComTipoDeDadoMenor);
 
 
 
