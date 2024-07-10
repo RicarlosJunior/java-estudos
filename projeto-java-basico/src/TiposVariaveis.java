@@ -15,6 +15,33 @@ public class TiposVariaveis {
     //int longo - 0;
     
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+       
+        //tipos primitivos
+        
+        /*byte 
+        short
+        int 
+        long 
+        float   
+        double
+        boolean */
+
+        //toda variavel tem um Tipo (Obrigatorio) um Nome (Obrigatorio) e um Valor (Opcional)
+        //Exemplo:
+        int idade = 32;
+        boolean estaEstudando = true;
+
+
+        //(cast) ou popular mente chamado de coerção, é um conceito aplicado em variaveis com tipo de capacidade
+        //para receber um valor maior e quero mesmo assim atribuir esse valor a uma variavel com seu tipo menor.
+        //Exemplo
+        int idadeComTipoDeDadoMaior = 32; //variavel inteira com capacidade de armazenar um dado muito maior que um short
+        short idadeComTipoDeDadoMenor = (short) idadeComTipoDeDadoMaior; //cast aplicado
+
+
+
+
+
+
     }
 }
