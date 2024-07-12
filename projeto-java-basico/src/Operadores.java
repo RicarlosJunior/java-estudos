@@ -2,15 +2,12 @@ public class Operadores {
     
     public static void main(String[] args) {
         
-
         //Operador de Atribuição ( = )
         //É responsavel por atribuir um valor a uma variavel/Referencia.
         //Exemplo
         int idade = 32;
         double salario = 10000.0;
         boolean estaEstudando = true;
-        
-
 
         //Operadores Aritimetico (+ - / * % )
         //São usados para realizar operações matematicas
