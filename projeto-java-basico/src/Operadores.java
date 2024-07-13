@@ -32,7 +32,7 @@ public class Operadores {
             //logica
         }
         
-        //Negação se o conteudo da variavel for true fica false e se for false fica true 
+        //Negação se o conteudo da variavel for true fica false e se for false fica true  para comparação
         //(Obs ele nao alterar o valor da variavel)
         if(!estaEstudando){
             // Logica aqui
@@ -40,7 +40,39 @@ public class Operadores {
 
 
 
+        //Operadores relacionais (> >= < <= == !=)
+        //São usados em comparação semelhante aos operadores logicos
+        //Exemplo 
+        
+        //Verifica se os valores sao iguais
+        if(idade == idadeAniversariante){
+            //Logica aqui
+        }
 
+        //Verifica se os valores sao diferentes
+        if(idade != idadeAniversariante){
+            //Logica aqui
+        }
+
+        //Verifica se o valor de idade e maior que o valor de idadeAniversariante
+        if(idade > idadeAniversariante){
+            //Logica aqui
+        }
+
+           //Verifica se o valor de idade e maior ou igaual que o valor de idadeAniversariante
+        if(idade >= idadeAniversariante){
+            //Logica aqui
+        }
+
+        //Verifica se o valor de idade e menor que o valor de idadeAniversariante
+        if(idade < idadeAniversariante){
+            //Logica aqui
+        }
+
+        //Verifica se o valor de idade e menor ou igaual que o valor de idadeAniversariante
+        if(idade <= idadeAniversariante){
+            //Logica aqui
+        }
 
     }
 
