@@ -6,7 +6,7 @@ simulando o lançamento do IPhone em 2007.
 
 ## Segue abaixo a imagem do diagrama.
 
-![Diagrama](images/minha-imagem.png)
+![Diagrama](diagrama-classe.png)
 
 ## Observação.
 
