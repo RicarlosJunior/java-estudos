@@ -1,6 +1,6 @@
 ## Desafio DIO - Modelando o iPhone com UML (Funções Basicas).
 
-Esse foi o desafio proposto no modulo de Programação Orientado a Objetos (Fundamentos/Pilares do paradigma).
+Esse foi o desafio proposto no módulo de Programação Orientado a Objetos (Fundamentos/Pilares do paradigma).
 Criar um diagrama UML que representasse as funções de um aparelho telefônico, reprodutor musical e navegador de internet,
 simulando o lançamento do IPhone em 2007.
 
