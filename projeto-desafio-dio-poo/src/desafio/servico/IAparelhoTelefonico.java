@@ -1,4 +1,4 @@
-package desafio.inteface;
+package desafio.servico;
 
 public interface IAparelhoTelefonico {
 
