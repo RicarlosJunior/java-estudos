@@ -1,18 +1,15 @@
-## Getting Started
+## Desafio DIO - Modelando o iPhone com UML (Funções Basicas).
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Esse foi o desafio proposto no modulo de Programação Orientado a Objetos (Fundamentos/Pilares do paradigma).
+Criar um diagrama UML que representasse as funções de um aparelho telefônico, reprodutor musical e navegador de internet,
+simulando o lançamento do IPhone em 2007.
 
-## Folder Structure
+## Segue abaixo a imagem do diagrama.
 
-The workspace contains two folders by default, where:
+![Diagrama](../diagrama-classe.png)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Observação.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Para solidificar o conhecimento, optei por implementar o diagrama e deixar o código disponível para análise e estudo aqui nesse repositório.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
