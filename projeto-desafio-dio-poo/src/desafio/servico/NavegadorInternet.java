@@ -1,6 +1,6 @@
 package desafio.servico;
 
-public interface INavegadorInternet {
+public interface NavegadorInternet {
 
     public abstract void exibirPagina(String url);
     public abstract void adicionarNovaAba();

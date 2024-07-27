@@ -1,10 +1,10 @@
 package desafio.modelo;
 
-import desafio.servico.IAparelhoTelefonico;
-import desafio.servico.INavegadorInternet;
-import desafio.servico.IReprodutorMusical;
+import desafio.servico.AparelhoTelefonico;
+import desafio.servico.NavegadorInternet;
+import desafio.servico.ReprodutorMusical;
 
-public class IPhone implements IAparelhoTelefonico, IReprodutorMusical, INavegadorInternet {
+public class IPhone implements AparelhoTelefonico, ReprodutorMusical, NavegadorInternet {
 
     @Override
     public void exibirPagina(String url) {

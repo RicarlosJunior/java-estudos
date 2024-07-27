@@ -1,6 +1,6 @@
 package desafio.servico;
 
-public interface IReprodutorMusical {
+public interface ReprodutorMusical {
 
     public abstract void tocar();
     public abstract void pausar();
