@@ -1,0 +1,23 @@
+package teoria;
+
+public class ConceitosObservacoes {
+
+    //Estudo sobre collection
+    //Collection nao aceita tipo primitivos
+    //Collection e considerado um Framework - api
+
+    //Tipos Genericos utilizados tanto em interfaces quanto classes
+    //o tipo e definido por inferencia atraves do operador diamante <T>  (T = Type)
+
+
+    //Comparable é uma interface que fornece uma sequencia unica de ordenaçao e pertence ao pacote java.lang
+    //fornece o metodo de comparação compareTo que deve ser implementado pela classe que a implementa
+    //Podemos de fato ordenar uma collection usando o Collections.sort(Lista)
+    //passando a lista que deseja ordenar como parametro
+
+
+    //Comparator e uma interface fornece multiplas sequencias de ordenação e pertence ao pacote java.util
+    //fornece o metodo de comparação compare que deve ser implementado pela classe que a implementa
+    //Podemos de fato ordenar uma collection usando o Collections.sort(Lista, ClasseComparator)
+    //passando a lista e classe que contem o camparator definida por parametro
+}
