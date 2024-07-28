@@ -1,5 +1,10 @@
+import java.util.List;
+
 import list.operacoesBasicas.CarrinhoDeCompra;
-//import list.operacoesBasicas.ListaTarefa;
+import list.operacoesBasicas.ListaTarefa;
+import list.pesquisa.CatalogoLivros;
+import list.pesquisa.Livro;
+import list.pesquisa.SomaNumeros;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -19,7 +24,7 @@ public class App {
         System.out.println("Quantidade de tarefas: "+ listaTarefa.obterNumeroTotalTarefas());
         */
 
-        CarrinhoDeCompra carrinhoDeCompra = new CarrinhoDeCompra();
+        /*CarrinhoDeCompra carrinhoDeCompra = new CarrinhoDeCompra();
 
         carrinhoDeCompra.adicionarItem("CS2", 100.0, 1);
         carrinhoDeCompra.adicionarItem("Monitor", 1000.0, 2);
@@ -31,7 +36,49 @@ public class App {
 
         System.out.println("Valor Total Apos: " + carrinhoDeCompra.calcularValorTotal());
         
-        carrinhoDeCompra.exibirItens();
+        carrinhoDeCompra.exibirItens();*/
+
+
+        /*CatalogoLivros catalogoLivros = new CatalogoLivros();
+
+
+        catalogoLivros.adicionarLivro("Livro 1", "Autor 1", 2022);
+        catalogoLivros.adicionarLivro("Livro 1", "Autor 2", 2022);
+        catalogoLivros.adicionarLivro("Livro 3", "Autor 3", 2022);
+        catalogoLivros.adicionarLivro("Livro 4", "Autor 4", 2022);
+        catalogoLivros.adicionarLivro("Livro 5", "Autor 5", 2023);
+        catalogoLivros.adicionarLivro("Livro 6", "Autor 5", 2023);
+        catalogoLivros.adicionarLivro("Livro 7", "Autor 7", 2024);
+        catalogoLivros.adicionarLivro("Livro 8", "Autor 8", 2024);
+
+     
+        System.out.println("pesquisarPorAutor: " + catalogoLivros.pesquisarPorAutor("Autor 5"));
+        System.out.println("pesquisarPorAnoPublicacao: " + catalogoLivros.pesquisarPorAnoPublicacao(2023, 2024));
+        System.out.println("pesquisarPorTitulo: " + catalogoLivros.pesquisarPorTitulo("Livro 1"));
+        */
+
+
+        SomaNumeros somaNumeros = new SomaNumeros();
+
+
+        somaNumeros.adicionarNumero(1);
+        somaNumeros.adicionarNumero(5);
+        somaNumeros.adicionarNumero(2);
+        somaNumeros.adicionarNumero(5);
+        somaNumeros.adicionarNumero(-5);
+        somaNumeros.adicionarNumero(4);
+        somaNumeros.adicionarNumero(3);
+        somaNumeros.adicionarNumero(-5);
+
+        System.out.println(somaNumeros.encontrarMaiorNumero());
+
+        System.out.println(somaNumeros.encontrarMenorNumero());
+
+        somaNumeros.exibirNumeros();
+
+        System.out.println(somaNumeros.realizarSoma()); 
+
+
 
 
 
