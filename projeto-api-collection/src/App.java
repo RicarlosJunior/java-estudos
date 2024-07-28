@@ -7,11 +7,15 @@ public class App {
         System.out.println("Quantidade de tarefas: "+ listaTarefa.obterNumeroTotalTarefas());
 
         listaTarefa.adicionarTarefa("Tarefa 1");
+        listaTarefa.adicionarTarefa("Tarefa 1");
         listaTarefa.adicionarTarefa("Tarefa 2");
         System.out.println("Quantidade de tarefas: "+ listaTarefa.obterNumeroTotalTarefas());
 
         listaTarefa.obterDescricoesTarefas();
 
+
+        listaTarefa.removerTarefa("Tarefa 1");
+        System.out.println("Quantidade de tarefas: "+ listaTarefa.obterNumeroTotalTarefas());
 
     }
 }
