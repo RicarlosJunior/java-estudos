@@ -2,6 +2,7 @@ import java.util.List;
 
 import list.operacoesBasicas.CarrinhoDeCompra;
 import list.operacoesBasicas.ListaTarefa;
+import list.ordenacao.OrdenacaoNumeros;
 import list.ordenacao.OrdenacaoPessoas;
 import list.pesquisa.CatalogoLivros;
 import list.pesquisa.Livro;
@@ -82,13 +83,28 @@ public class App {
 
 
 
-        OrdenacaoPessoas ordenacaoPessoas = new OrdenacaoPessoas();
+        /*OrdenacaoPessoas ordenacaoPessoas = new OrdenacaoPessoas();
 
         ordenacaoPessoas.adicionarPessoas("Junior", 32, 1.79);
         ordenacaoPessoas.adicionarPessoas("Fernanda", 35, 1.70);
         ordenacaoPessoas.adicionarPessoas("Cecilia", 1, 0.88);
 
-        System.out.println(ordenacaoPessoas.ordenarPorAltura());
+        System.out.println(ordenacaoPessoas.ordenarPorAltura());*/
+
+
+
+        OrdenacaoNumeros ordenacaoNumeros = new OrdenacaoNumeros();
+
+        ordenacaoNumeros.adicionarNumero(1);
+        ordenacaoNumeros.adicionarNumero(5);
+        ordenacaoNumeros.adicionarNumero(2);
+        ordenacaoNumeros.adicionarNumero(4);
+        ordenacaoNumeros.adicionarNumero(3);
+
+
+
+        ordenacaoNumeros.ordenarDescendente();
+        
 
 
 
