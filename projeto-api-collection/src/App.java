@@ -101,7 +101,7 @@ public class App {
         ordenacaoNumeros.adicionarNumero(4);
         ordenacaoNumeros.adicionarNumero(3);
 
-
+        ordenacaoNumeros.ordenarAscendente();
 
         ordenacaoNumeros.ordenarDescendente();
         
