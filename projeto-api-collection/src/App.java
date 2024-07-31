@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Set;
 
 import list.operacoesBasicas.CarrinhoDeCompra;
 import list.operacoesBasicas.ListaTarefa;
@@ -7,6 +8,7 @@ import list.ordenacao.OrdenacaoPessoas;
 import list.pesquisa.CatalogoLivros;
 import list.pesquisa.Livro;
 import list.pesquisa.SomaNumeros;
+import set.operacoesBasicas.ConjuntoPalavrasUnicas;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -93,7 +95,7 @@ public class App {
 
 
 
-        OrdenacaoNumeros ordenacaoNumeros = new OrdenacaoNumeros();
+        /*OrdenacaoNumeros ordenacaoNumeros = new OrdenacaoNumeros();
 
         ordenacaoNumeros.adicionarNumero(1);
         ordenacaoNumeros.adicionarNumero(5);
@@ -103,8 +105,26 @@ public class App {
 
         ordenacaoNumeros.ordenarAscendente();
 
-        ordenacaoNumeros.ordenarDescendente();
+        ordenacaoNumeros.ordenarDescendente();*/
+
+
+         ConjuntoPalavrasUnicas conjuntoPalavrasUnicas = new ConjuntoPalavrasUnicas();
+
         
+        conjuntoPalavrasUnicas.adicionarPalavra("Madara");
+        conjuntoPalavrasUnicas.adicionarPalavra("Itachi");
+        conjuntoPalavrasUnicas.adicionarPalavra("Obito");
+        conjuntoPalavrasUnicas.adicionarPalavra("Kakashi");
+   
+        conjuntoPalavrasUnicas.exibirPalavrasUnicas();
+
+        conjuntoPalavrasUnicas.removerPalavra("Obito");
+        
+        conjuntoPalavrasUnicas.exibirPalavrasUnicas();
+
+        System.out.println(conjuntoPalavrasUnicas.verificarPalavra("Itachi"));
+
+
 
 
 
