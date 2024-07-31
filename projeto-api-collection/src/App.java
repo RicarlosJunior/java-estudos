@@ -10,6 +10,7 @@ import list.pesquisa.Livro;
 import list.pesquisa.SomaNumeros;
 import set.operacoesBasicas.ConjuntoPalavrasUnicas;
 import set.pesquisa.AgendaContatos;
+import set.pesquisa.ListaTarefas;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -125,7 +126,7 @@ public class App {
 
         System.out.println(conjuntoPalavrasUnicas.verificarPalavra("Itachi"));*/
 
-        AgendaContatos agendaContatos = new AgendaContatos();
+        /*AgendaContatos agendaContatos = new AgendaContatos();
 
         agendaContatos.exibirContatos();
 
@@ -141,7 +142,31 @@ public class App {
 
         agendaContatos.atualizarNumeroContato("Junior Silva", "5555555555");
 
-        agendaContatos.exibirContatos();
+        agendaContatos.exibirContatos();*/
+
+        ListaTarefas listaTarefas = new ListaTarefas();
+
+        listaTarefas.exibirTarefas();
+        listaTarefas.adicionarTarefa("Treinar");
+        listaTarefas.exibirTarefas();
+        System.out.println(listaTarefas.contarTarefas());
+        //listaTarefas.removerTarefa("Treinar");
+        listaTarefas.exibirTarefas();
+
+        listaTarefas.marcarTarefaPendente("Treinar");
+        listaTarefas.exibirTarefas();
+
+        listaTarefas.marcarTarefaConcluida("Treinar");
+        listaTarefas.exibirTarefas();
+
+       
+
+        System.out.println("Tarefas Concluidas: "+listaTarefas.obterTarefasConcluidas());
+
+        System.out.println("Tarefas Pendentes: "+listaTarefas.obterTarefasPendentes());
+
+        listaTarefas.limparListaTarefas();
+        listaTarefas.exibirTarefas();
 
 
 
