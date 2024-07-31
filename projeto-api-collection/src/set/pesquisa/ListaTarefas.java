@@ -88,7 +88,7 @@ public class ListaTarefas {
             }
         }
         if(tarefaAtualizada){
-            System.out.println("Tarefa  pendente!");
+            System.out.println("Tarefa pendente!");
         }else{
             System.out.println("Não existe nenhuma tarefa com essa descrição!");
         }
