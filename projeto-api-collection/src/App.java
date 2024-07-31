@@ -9,6 +9,7 @@ import list.pesquisa.CatalogoLivros;
 import list.pesquisa.Livro;
 import list.pesquisa.SomaNumeros;
 import set.operacoesBasicas.ConjuntoPalavrasUnicas;
+import set.pesquisa.AgendaContatos;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -108,7 +109,7 @@ public class App {
         ordenacaoNumeros.ordenarDescendente();*/
 
 
-         ConjuntoPalavrasUnicas conjuntoPalavrasUnicas = new ConjuntoPalavrasUnicas();
+        /*ConjuntoPalavrasUnicas conjuntoPalavrasUnicas = new ConjuntoPalavrasUnicas();
 
         
         conjuntoPalavrasUnicas.adicionarPalavra("Madara");
@@ -122,10 +123,25 @@ public class App {
         
         conjuntoPalavrasUnicas.exibirPalavrasUnicas();
 
-        System.out.println(conjuntoPalavrasUnicas.verificarPalavra("Itachi"));
+        System.out.println(conjuntoPalavrasUnicas.verificarPalavra("Itachi"));*/
 
+        AgendaContatos agendaContatos = new AgendaContatos();
 
+        agendaContatos.exibirContatos();
 
+        agendaContatos.adicionarContato("Junior", "111111111");
+        agendaContatos.adicionarContato("Fernanda", "222222222");
+        agendaContatos.adicionarContato("Cecilia", "333333333");
+        agendaContatos.adicionarContato("Junior Cesar", "4444444444");
+        agendaContatos.adicionarContato("Junior Silva", "4444444444");
+
+        agendaContatos.exibirContatos();
+
+        System.out.println(agendaContatos.pesquisarPorNome("Junior"));
+
+        agendaContatos.atualizarNumeroContato("Junior Silva", "5555555555");
+
+        agendaContatos.exibirContatos();
 
 
 
