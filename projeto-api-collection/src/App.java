@@ -10,6 +10,7 @@ import list.pesquisa.Livro;
 import list.pesquisa.SomaNumeros;
 import set.operacoesBasicas.ConjuntoPalavrasUnicas;
 import set.ordenacao.CadastroProduto;
+import set.ordenacao.GerenciadorAluno;
 import set.pesquisa.AgendaContatos;
 import set.pesquisa.ListaTarefas;
 
@@ -170,7 +171,7 @@ public class App {
         listaTarefas.exibirTarefas();*/
 
 
-        CadastroProduto cadastroProduto = new CadastroProduto();
+        /*CadastroProduto cadastroProduto = new CadastroProduto();
         cadastroProduto.adicionarProduto(1, "Caneta", 4.20, 1);
         cadastroProduto.adicionarProduto(2, "Caderno", 20.0, 1);
         cadastroProduto.adicionarProduto(3, "Livro", 98.99, 1);
@@ -178,7 +179,31 @@ public class App {
 
         System.out.println("Ordenando por nome:"+cadastroProduto.exibirProdutosPorNome());
 
-        System.out.println("Ordenando por preço:"+cadastroProduto.exibirProdutosPorPreco());
+        System.out.println("Ordenando por preço:"+cadastroProduto.exibirProdutosPorPreco());*/
+
+        GerenciadorAluno gerenciadorAluno = new GerenciadorAluno();
+
+        gerenciadorAluno.adicionarAluno(1, "Ricarlos", 8);
+        gerenciadorAluno.adicionarAluno(2, "Fernanda", 9);
+        gerenciadorAluno.adicionarAluno(4, "Yuri", 5);
+        gerenciadorAluno.adicionarAluno(3, "Cecilia", 10);
+       
+
+        gerenciadorAluno.exibirAlunos();
+
+        gerenciadorAluno.exibirAlunosPorNome();
+
+        gerenciadorAluno.exibirAlunosPorNota();
+
+        gerenciadorAluno.removerAluno(4);
+
+        System.out.println("*************************");
+
+        gerenciadorAluno.exibirAlunos();
+
+        gerenciadorAluno.exibirAlunosPorNome();
+
+        gerenciadorAluno.exibirAlunosPorNota();
 
 
 
