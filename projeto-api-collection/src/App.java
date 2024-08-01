@@ -9,6 +9,7 @@ import list.pesquisa.CatalogoLivros;
 import list.pesquisa.Livro;
 import list.pesquisa.SomaNumeros;
 import set.operacoesBasicas.ConjuntoPalavrasUnicas;
+import set.ordenacao.CadastroProduto;
 import set.pesquisa.AgendaContatos;
 import set.pesquisa.ListaTarefas;
 
@@ -144,13 +145,13 @@ public class App {
 
         agendaContatos.exibirContatos();*/
 
-        ListaTarefas listaTarefas = new ListaTarefas();
+        /*ListaTarefas listaTarefas = new ListaTarefas();
 
         listaTarefas.exibirTarefas();
         listaTarefas.adicionarTarefa("Treinar");
         listaTarefas.exibirTarefas();
         System.out.println(listaTarefas.contarTarefas());
-        //listaTarefas.removerTarefa("Treinar");
+        listaTarefas.removerTarefa("Treinar");
         listaTarefas.exibirTarefas();
 
         listaTarefas.marcarTarefaPendente("Treinar");
@@ -166,8 +167,18 @@ public class App {
         System.out.println("Tarefas Pendentes: "+listaTarefas.obterTarefasPendentes());
 
         listaTarefas.limparListaTarefas();
-        listaTarefas.exibirTarefas();
+        listaTarefas.exibirTarefas();*/
 
+
+        CadastroProduto cadastroProduto = new CadastroProduto();
+        cadastroProduto.adicionarProduto(1, "Caneta", 4.20, 1);
+        cadastroProduto.adicionarProduto(2, "Caderno", 20.0, 1);
+        cadastroProduto.adicionarProduto(3, "Livro", 98.99, 1);
+        cadastroProduto.adicionarProduto(4, "Adesivo", 8, 1);
+
+        System.out.println("Ordenando por nome:"+cadastroProduto.exibirProdutosPorNome());
+
+        System.out.println("Ordenando por preço:"+cadastroProduto.exibirProdutosPorPreco());
 
 
 
