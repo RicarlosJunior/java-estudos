@@ -1,8 +1,5 @@
-import java.util.List;
-import java.util.Set;
 
-import map.operacoesBasicas.AgendaContatos;
-import map.operacoesBasicas.Dicionario;
+
 
 /*import list.operacoesBasicas.CarrinhoDeCompra;
 import list.operacoesBasicas.ListaTarefa;
@@ -15,7 +12,14 @@ import set.operacoesBasicas.ConjuntoPalavrasUnicas;
 import set.ordenacao.CadastroProduto;
 import set.ordenacao.GerenciadorAluno;
 import set.pesquisa.AgendaContatos;
-import set.pesquisa.ListaTarefas;*/
+import set.pesquisa.ListaTarefas;
+import map.pesquisa.EstoqueProdutos;
+import map.pesquisa.ContagemPalavras;*/
+
+import map.ordenacao.AgendaEventos;
+import map.ordenacao.Evento;
+
+import java.time.LocalDate;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -151,7 +155,7 @@ public class App {
         agendaContatos.exibirContatos();
         System.out.println(agendaContatos.pesquisarPorNome("Ricarlos"));*/
 
-        Dicionario dicionario = new Dicionario();
+        /*Dicionario dicionario = new Dicionario();
         dicionario.exibirPalavras();
         dicionario.adicionarPalvra("Teste", "Teste");
         dicionario.adicionarPalvra("Teste1", "Teste1");
@@ -160,11 +164,40 @@ public class App {
         dicionario.exibirPalavras();
         dicionario.removerPalavra("Teste1");
         dicionario.exibirPalavras();
-        System.out.println(dicionario.pesquisarPorPalavra("Teste3"));
+        System.out.println(dicionario.pesquisarPorPalavra("Teste3"));*/
 
+        /*EstoqueProdutos estoqueProdutos = new EstoqueProdutos();
+        estoqueProdutos.adicionarProduto(1, "Caneta", 1, 3d);
+        estoqueProdutos.adicionarProduto(2, "Adesivo", 1, 10d);
+        estoqueProdutos.adicionarProduto(3, "Boracha", 1, 1d);
+        estoqueProdutos.exibirProdutos();
+        System.out.println("*************************************************");
+        System.out.println("Mais Caro "+estoqueProdutos.obterProdutoMaisCaro());
+        System.out.println("Mais Barato "+estoqueProdutos.obterProdutoMaisBarato());
+        System.out.println("Maior Qtde por Valor "+estoqueProdutos.obterProdutoMaiorQuantidadeValorTotalNoEstoque());
+        System.out.println("Valor Total Estoque "+estoqueProdutos.calcularValorTotalEstoque());*/
 
+        /*ContagemPalavras contagemPalavras = new ContagemPalavras();
+        contagemPalavras.exibirContagemPalavras();
+        contagemPalavras.adicionarPalavra("Teste", 10);
+        contagemPalavras.adicionarPalavra("Teste1", 15);
+        contagemPalavras.exibirContagemPalavras();
+        System.out.println(contagemPalavras.encontrarPalavraMaisFrequente());
+        contagemPalavras.removerPalavra("Teste1");
+        contagemPalavras.exibirContagemPalavras();*/
 
+        AgendaEventos agendaEventos = new AgendaEventos();
 
+        agendaEventos.exibirAgenda();
+        agendaEventos.adicionarEvento(LocalDate.of(2024, 9, 30), "Especial Niver Ricarlos", "Sabor de Forro");
+        agendaEventos.adicionarEvento(LocalDate.of(2024, 3, 16), "Especial Niver Cecilia", "Galinha Pintadinha");
+        agendaEventos.adicionarEvento(LocalDate.of(2024, 11, 17), "Especial Niver Fernanda", "Gilberto Gil");
 
+        agendaEventos.exibirAgenda();
+
+        Evento proximoEvento = agendaEventos.obterProximoEvento();
+        if(proximoEvento != null){
+            System.out.println("Próximo Evento: "+proximoEvento.getNomeEvento()+", Atração: "+proximoEvento.getNomeAtracao());
+        }
     }
 }
