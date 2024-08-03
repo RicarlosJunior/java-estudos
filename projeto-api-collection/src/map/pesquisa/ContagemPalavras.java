@@ -28,7 +28,7 @@ public class ContagemPalavras {
     }
 
     public Map<String, Integer> encontrarPalavraMaisFrequente(){
-        Map<String, Integer> palavraMaisFrequente = new HashMap<>();;
+        Map<String, Integer> palavraMaisFrequente = new HashMap<>();
         if(!this.mapPalavras.isEmpty()){
             int qtdeVezesPalavra = Integer.MIN_VALUE;
             for (Map.Entry<String, Integer> entry : this.mapPalavras.entrySet()) {

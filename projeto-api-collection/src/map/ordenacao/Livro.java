@@ -1,4 +1,5 @@
 package map.ordenacao;
+import java.lang.Comparable;
 
 public class Livro {
     private String titulo;
