@@ -1,6 +1,4 @@
 
-
-
 /*import list.operacoesBasicas.CarrinhoDeCompra;
 import list.operacoesBasicas.ListaTarefa;
 import list.ordenacao.OrdenacaoNumeros;
@@ -14,15 +12,14 @@ import set.ordenacao.GerenciadorAluno;
 import set.pesquisa.AgendaContatos;
 import set.pesquisa.ListaTarefas;
 import map.pesquisa.EstoqueProdutos;
-import map.pesquisa.ContagemPalavras;*/
-
+import map.pesquisa.ContagemPalavras;
 import map.ordenacao.AgendaEventos;
 import map.ordenacao.Evento;
 import map.ordenacao.LivrariaOnline;
 import map.ordenacao.Livro;
 
 import java.time.LocalDate;
-import java.util.Map;
+import java.util.Map;*/
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -200,39 +197,26 @@ public class App {
             System.out.println("Próximo Evento: "+proximoEvento.getNomeEvento()+", Atração: "+proximoEvento.getNomeAtracao());
         }*/
 
-        LivrariaOnline livrariaOnline = new LivrariaOnline();
+        /*LivrariaOnline livrariaOnline = new LivrariaOnline();
         livrariaOnline.adicionarLivro("1", "Titulo1", "Titulo11", 5d);
         livrariaOnline.adicionarLivro("2", "Titulo1", "Titulo1", 7d);
         livrariaOnline.adicionarLivro("3", "Titulo2", "Titulo1", 6d);
         livrariaOnline.adicionarLivro("4", "Titulo2", "Titulo1", 9d);
         livrariaOnline.adicionarLivro("5", "Titulo2", "Titulo1", 2d);
         livrariaOnline.adicionarLivro("6", "Titulo2", "Titulo1", 3d);
-
-        
-       /*Map<String, Livro> livrosPorAutor = livrariaOnline.pesquisarLivrosPorAutor("Titulo11");
+        Map<String, Livro> livrosPorAutor = livrariaOnline.pesquisarLivrosPorAutor("Titulo11");
         if(livrosPorAutor != null){
             System.out.println(livrosPorAutor);
         }
-       
-
         Livro livro = livrariaOnline.obterLivroMaisCaro();
         if(livro != null){
            System.out.println("Livro mais caro: "+livro.getPreco());
         }
-       
         livro = livrariaOnline.obterLivroMaisBarato();
         if(livro != null){
             System.out.println("Livro mais barato: "+livro.getPreco());
-        }*/
-
-
-
-        System.out.println(livrariaOnline.exibirLivrosOrdenadosPorPreco());
-
-
-
-
-
+        }
+        System.out.println(livrariaOnline.exibirLivrosOrdenadosPorPreco());*/
 
     }
 }
