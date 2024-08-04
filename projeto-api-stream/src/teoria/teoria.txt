@@ -1,0 +1,9 @@
+Java API Stream
+
+Functional Interface: É uma interface Java que tem um unico metodo abstrato. SAM (Single Abstract Method)
+Em java temos varias dessas interfaces no curso serao abordadas as 5 mais utilizadas
+ - Consumer<T> Nao retornar nenhum valor
+ - Supplier<T>
+ - Function<T, R>
+ - Predicate<T>
+ - BinaryOperator<T>
