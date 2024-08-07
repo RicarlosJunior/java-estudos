@@ -2,8 +2,14 @@ Java API Stream
 
 Functional Interface: É uma interface Java que tem um unico metodo abstrato. SAM (Single Abstract Method)
 Em java temos varias dessas interfaces no curso serao abordadas as 5 mais utilizadas
- - Consumer<T> Nao retornar nenhum valor
- - Supplier<T>
- - Function<T, R>
- - Predicate<T>
- - BinaryOperator<T>
+ - Consumer<T> Aceita um argumento e nao retornar nenhum valor
+ - Supplier<T> Não aceita nenhum argumento e retorna um objeto do tipo T (Qualquer tipo)
+ - Function<T, R>  Aceita um argumento do tipo T (Qualquer tipo) e retorna um resultuado do tipo R
+                     (obs tenho que passar o tipo T e o tipo R)
+ - Predicate<T> Aceita um argumento do tipo T (Qualquer tipo) e retorna um boolean
+ - BinaryOperator<T> Recebe dois argumentos do Tipo T e retornar o resultado do tipo T mesmo tipo
+
+
+Obs: Quando estamos trabalhando com Stream podemos classificar as operaçoes em duas categorias
+    - Intermediarias retorna uma nova stream e permite o encadeamento
+    - Terminais sao aquelas que produzem o resultado final
