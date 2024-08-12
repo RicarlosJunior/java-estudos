@@ -47,7 +47,7 @@ public class Main {
          
          
          
-         System.out.println("\nExtrato da Conta Poupança\n");
+         System.out.println("\nExtrato da Conta Poupanca\n");
  
          //Tirando extrato da conta poupança
          contaPoupanca.extrato();
