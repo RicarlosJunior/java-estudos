@@ -1,5 +1,10 @@
 package br.com.bancodigital.modelo;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class ContaPoupanca  extends Conta{
     
     private double taxaJuros;
@@ -14,15 +19,6 @@ public class ContaPoupanca  extends Conta{
         System.out.println("=== Extrato Conta Poupanca ===");
         super.extrato();
         System.out.println(String.format("=== Taxa de Juros %.2f ===", this.taxaJuros));
-    }
-
-
-    public double getTaxaJuros() {
-        return taxaJuros;
-    }
-
-    public void setTaxaJuros(double taxaJuros) {
-        this.taxaJuros = taxaJuros;
     }
      
 }

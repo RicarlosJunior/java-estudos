@@ -3,7 +3,12 @@ package br.com.bancodigital.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.Getter;
+import lombok.Setter;
 
+
+@Setter
+@Getter
 public class Banco {
 
     private String nomeInstituicao;
@@ -16,22 +21,6 @@ public class Banco {
         this.cnpj = cnpj;
         this.endereco = endereco;
         this.contas = new ArrayList<>();
-    }
-
-    public String getNomeInstituicao() {
-        return nomeInstituicao;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public List<Conta> getContas() {
-        return contas;
-    }
-
-    public String getCnpj() {
-        return cnpj;
     }
 
 }

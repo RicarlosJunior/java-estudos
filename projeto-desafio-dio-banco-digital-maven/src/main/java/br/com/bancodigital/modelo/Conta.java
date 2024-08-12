@@ -1,5 +1,10 @@
 package br.com.bancodigital.modelo;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public abstract class Conta {
 
     private static final String AGENCIA = "0001";
@@ -36,10 +41,6 @@ public abstract class Conta {
         System.out.println(String.format("=== Numero Conta: %d ===", this.numeroConta));
         System.out.println(String.format("=== Cliente: %s ===", this.cliente.getNome()));
         System.out.println(String.format("=== Saldo R$: %.2f ===", this.saldo));
-    }
-
-    public Cliente getCliente() {
-        return cliente;
     }
 
     @Override
