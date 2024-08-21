@@ -22,7 +22,7 @@ public class App {
         
         scanner.close();
 
-        System.out.print(String.format("Olá %s obrigado por criar uma conta em nosso banco, sua Agência é %s Conta %d e seu saldo %.2f já está disponivel.", 
+        System.out.print(String.format("Olá %s, obrigado por criar uma conta em nosso banco, sua Agência é %s, sua Conta %d e seu saldo %.2f já está disponivel.", 
                             contaTermial.getNomeCliente(), 
                             contaTermial.getAgencia(), 
                             contaTermial.getNumero(), 
